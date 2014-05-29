@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 <head>
 	<meta charset="UTF-8">
-	<title>Live Calculartor with Input-Fields</title>
+	<title>Live Calculator with Input-Fields and the magic of Angular.JS</title>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript" charset="utf-8">
@@ -19,13 +19,13 @@
 </head>
 <body >
 	<form action="" class="myform" ng-controller="CalculatorCtrl">
-		<input type="radio" id="radio1" ng-value="40" name="radio" ng-model="one"><label for="radio1">Add 40 Euro to Card</label><br>
-		<input type="radio" id="radio2" ng-value="10" name="radio" ng-model="one"><label for="radio2">Add 10 Euro to Card</label><br>
-		<input type="radio" id="radio3" ng-value="20" name="radio" ng-model="one"><label for="radio3">Add 20 Euro to Card</label><br>
+		<input type="radio" id="radio1" ng-value="40" name="radio" ng-model="one"><label for="radio1">Add 40 Euro to Cart</label><br>
+		<input type="radio" id="radio2" ng-value="10" name="radio" ng-model="one"><label for="radio2">Add 10 Euro to Cart</label><br>
+		<input type="radio" id="radio3" ng-value="20" name="radio" ng-model="one"><label for="radio3">Add 20 Euro to Cart</label><br>
 		<hr>
-		<input type="checkbox" id="check1" ng-true-value="5" name="check1" ng-model="check1"><label for="check1">Add 5 Euro to Card</label><br>
-		<input type="checkbox" id="check2" ng-true-value="20" name="check2" ng-model="check2"><label for="check2">Add 20 Euro to Card</label><br>
-		<input type="checkbox" id="check3" ng-true-value="50" name="check3" ng-model="check3"><label for="check3">Add 50 Euro to Card</label><br>
+		<input type="checkbox" id="check1" ng-true-value="5" name="check1" ng-model="check1"><label for="check1">Add 5 Euro to Cart</label><br>
+		<input type="checkbox" id="check2" ng-true-value="20" name="check2" ng-model="check2"><label for="check2">Add 20 Euro to Cart</label><br>
+		<input type="checkbox" id="check3" ng-true-value="50" name="check3" ng-model="check3"><label for="check3">Add 50 Euro to Cart</label><br>
 		<label for="numpages">Number of Pages(100 Euro per Page): </label><input type="text" name="numpages" id="numpages" ng-model="fixprice" placeholder="pages"/>
 		<hr>
 		<label for="selectprice">Additional: </label>
@@ -35,7 +35,7 @@
 			<option ng-value="20">Add 20 Euro</option>
 		</select><br>
 		<hr>
-		<h3>Card:</h3>
+		<h3>Cart:</h3>
 		<b>Net Price: {{total() | currency:"€ "}}</b><br>
 		<b>Tax(19%): {{total() * 0.19 | currency:"€ "}}</b><br>
 		<b>Total Price: {{total() * 1.19 | currency:"€ "}}</b>
