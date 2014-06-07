@@ -17,7 +17,6 @@ This is a simple live shopping cart use the magic of Angular.js.
 
 - It is only a simple cart. With no Items you would like to buy in the cart. Only the net price, the tax and the totalprice will caluculate from you selection. Thats all.
 
-- Sorry for the bad English :-|
 
 It is licenced under MIT <a href="http://opensource.org/licenses/MIT" title="MIT License" alt="MIT License" target="_blank">http://opensource.org/licenses/MIT</a>
 
