@@ -15,19 +15,70 @@
 	    	};
 		}
 	</script>
-	
+	<style type="text/css" media="screen">
+		
+		body{
+			max-width: 680px;
+			width:auto;
+			margin: 25px auto;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 62.5%;
+		}
+		
+		h1 {
+			text-align: center;
+			font-size: 2.5em;
+		}
+		
+		form {
+			background-color: #e6e6e6;
+			padding: 20px;
+			border-bottom: 3px solid green;
+		}
+		
+		form h2 {
+			background-color: #e0e0e0;
+			font-size: 1.5em;
+		}
+		
+		form h3 {
+			font-size: 1.5em;
+		}
+		
+		form label {
+			font-size: 1.4em;
+		}
+		
+		form b {
+			font-size: 1.6em;
+			color: darkgreen;
+			line-height: 25px;
+		}
+		
+		b:last-of-type {
+			text-decoration: underline;
+			font-style: italic;
+		}
+		
+	</style>
 </head>
 <body >
+	<h1>Simple Shopping Cart with AngularJS v1.2</h1>
 	<form action="" class="myform" ng-controller="CalculatorCtrl">
+		<h2>Radio-Buttons</h2>
 		<input type="radio" id="radio1" ng-value="40" name="radio" ng-model="one"><label for="radio1">Add 40 Euro to Cart</label><br>
 		<input type="radio" id="radio2" ng-value="10" name="radio" ng-model="one"><label for="radio2">Add 10 Euro to Cart</label><br>
 		<input type="radio" id="radio3" ng-value="20" name="radio" ng-model="one"><label for="radio3">Add 20 Euro to Cart</label><br>
 		<hr>
+		<h2>Check-Boxes</h2>
 		<input type="checkbox" id="check1" ng-true-value="5" name="check1" ng-model="check1"><label for="check1">Add 5 Euro to Cart</label><br>
 		<input type="checkbox" id="check2" ng-true-value="20" name="check2" ng-model="check2"><label for="check2">Add 20 Euro to Cart</label><br>
 		<input type="checkbox" id="check3" ng-true-value="50" name="check3" ng-model="check3"><label for="check3">Add 50 Euro to Cart</label><br>
-		<label for="numpages">Number of Pages(100 Euro per Page): </label><input type="text" name="numpages" id="numpages" ng-model="fixprice" placeholder="pages"/>
 		<hr>
+		<h2>Input-Field-Text</h2>
+		<label for="numpages">Number of Pages (100 Euro per Page): </label><input type="text" name="numpages" id="numpages" ng-model="fixprice" placeholder="pages"/>
+		<hr>
+		<h2>Select-Field</h2>
 		<label for="selectprice">Additional: </label>
 		<select name="selectprice" id="selectprice" ng-model="selectprice">
 			<option ng-value="5">Add 5 Euro</option>
@@ -35,7 +86,7 @@
 			<option ng-value="20">Add 20 Euro</option>
 		</select><br>
 		<hr>
-		<h3>Cart:</h3>
+		<h3>Shopping-Cart:</h3>
 		<b>Net Price: {{total() | currency:"€ "}}</b><br>
 		<b>Tax(19%): {{total() * 0.19 | currency:"€ "}}</b><br>
 		<b>Total Price: {{total() * 1.19 | currency:"€ "}}</b>

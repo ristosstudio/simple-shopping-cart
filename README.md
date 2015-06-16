@@ -1,9 +1,9 @@
 simple-shopping-cart
 ====================
 
-A live shopping cart with the magic of Angular.js
+A live shopping cart with the magic of AngularJS
 
-Check out the Demo: <a href="http://drive.ristosstudio.de/calc.html" target="_blank">http://drive.ristosstudio.de/calc.html</a>
+Check out the Demo: <a href="http://drive.ristosstudio.de/simple-shopping-cart-with-angularjs/calc.html" target="_blank">http://drive.ristosstudio.de/calc.html</a>
 
 This is a simple live shopping cart use the magic of Angular.js.
 
